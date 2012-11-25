@@ -1,0 +1,27 @@
+{
+  "name": "beechart-ppt",
+  "version": "0.0.1",
+  "description": "beechart-ppt\r ============",
+  "main": "grunt.js",
+  "dependencies": {
+    "connect": "~2.3.9",
+    "express": "~2.5.11",
+    "findit": "~0.1.2",
+    "grunt-contrib": "~0.3.0",
+    "jade": "~0.26.3",
+    "iconv-lite": "~0.2.5",
+    "nib": "~0.5.0",
+    "stylus": "~0.27.2",
+    "watch": "~0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjpsega/beechart-ppt.git"
+  },
+  "author": "",
+  "license": "BSD"
+}

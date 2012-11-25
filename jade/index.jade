@@ -1,0 +1,130 @@
+!!!5
+html
+    head
+        meta(charset="utf-8")
+        title beechart
+        meta(name="description",content="beechart图表介绍以及比较")
+        meta(name="keywords",content="beechart ppt")
+        link(rel="stylesheet",href="css/webslide.css")
+        link(rel="stylesheet",href="css/codecolorer.css")
+        style
+            .cream{
+                background-color:#FFFFCC
+            }
+            .orange{
+                background-color:#FF6600
+            }
+            .green{
+                background-color:#99CC00
+            }
+            table {
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              font-size: 20px;
+            }
+            table thead th {
+              color: #000;
+              border: 1px solid #000;
+              letter-spacing: 2px;
+              text-align: center;
+              padding: 6px 6px 6px 12px;
+            }
+            table tbody td {
+              border: 1px solid #000;
+              padding: 6px 6px 6px 12px;
+              text-align: center;
+              color: #000;
+            }
+            .table-wrapper{
+                position: absolute;
+                top: 50%;
+                height: 390px;
+                margin-top: -195px;
+                width:900px;
+            }
+    body   
+        #slide
+            .slides
+                section#cover.step
+                    section.title
+                        h1 BeeChart图表介绍
+                        h2 B2B - 沈剑平
+                section#slide2.step.slide
+                    h1 分享主题
+                    ul 
+                        li 为何开发自己的图表
+                        li 名字的由来
+                        li 图表演示
+                        li 与其他图表的比较
+                section#slide3.step.slide.rebuild
+                    h1 为何开发自己的图表
+                    ul(data-build)
+                        li 当时中文站广泛使用FusionCharts，FusionCharts交互效果一般
+                        li 设计师对交互的要求越来越高，现有图表无法满足，改造成本大
+                        li 自主开发、自主设计、自定视觉规范，满足项目需要
+                section#slide4.step.slide.rebuild
+                    h1 名字的由来
+                    ul(data-build)
+                        li 原名YID，YID == YES I DO
+                        li 开源的需要，YID在英语中有贬低犹太人的意思，经讨论，改名为BeeChart
+                section#slide5.step.slide
+                    h1 Demo
+                    br
+                    a(href="http://sjpsega.github.com/beechart/demo.html",target="_blank") 现有图表范例
+                    br
+                    br
+                    a(href="http://sjpsega.github.com/beechart/demo.html",target="_blank") 图表编辑器(1.5)
+                section#slide6.step.slide
+                    h1 与其他图表的比较
+                    .table-wrapper
+                        table
+                            thead.cream
+                                tr
+                                    th
+                                    th FusionChart
+                                    th amChart
+                                    th AnyChart
+                                    th HighChart
+                                    th BeeChart
+                            tbody
+                                tr
+                                    td.cream 是否收费
+                                    td 收费
+                                    td 收费
+                                    td 收费
+                                    td 收费
+                                    td.green 免费、开源
+                                tr
+                                    td.cream flash版本
+                                    td 有
+                                    td 有
+                                    td 有
+                                    td.orange 无
+                                    td 有
+                                tr
+                                    td.cream js版本
+                                    td 有
+                                    td 有
+                                    td 有
+                                    td 有
+                                    td.orange 无
+                                tr
+                                    td.cream 特点
+                                    td 图表类型全面，交互效果一般
+                                    td 图表类型较全，交互效果较好
+                                    td 图表类型全面，交互效果较好
+                                    td.green 图表类型较全，交互效果好
+                                    td.green 图表类型少，交互效果好
+                section.step.slide
+                    h1 BeeChart与HighChart
+            .progress
+                span
+        canvas#myCanvas(width="100%",height="100%") 您的浏览器不支持HTML5,请升级或更换您的浏览器,强烈推荐您使用chrome浏览器。
+        menu#slideCtrl.controls
+            span.tool.home(nclick="location.hash='#cover'") !
+            span.tool.paint p
+            span.tool.clearIt d
+        script(src="js/webslide.js")
+
+
