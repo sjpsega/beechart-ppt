@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         },
         files: {
           "index.html": "jade/index.jade",
-          "test.html": "jade/test.jade"
+          "test.html": "jade/test.jade",
+          "line-compare.html": "jade/line-compare.jade"
         }
       }
     },
